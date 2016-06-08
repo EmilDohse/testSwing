@@ -39,8 +39,7 @@ public class JStartPanel extends JComponent implements MouseListener{
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		
-		MVC.getController().startGame();
-		
+		MVC.getView().gameOver();
 	}
 
 	@Override

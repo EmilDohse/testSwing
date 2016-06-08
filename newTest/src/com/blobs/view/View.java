@@ -48,6 +48,14 @@ public class View extends JFrame implements IView {
 
 	@Override
 	public void gameOver() {
+		getContentPane().setBackground(new Color(204,0,0));
+		setBackground(new Color(204,0,0));
+		remove(startPanel);
+		
+		//startPanel.setVisible(false);
+	JGameOverPanel gameOverPanel = new JGameOverPanel();
+	add(gameOverPanel);
+	this.repaint();
     }
 
 	@Override
